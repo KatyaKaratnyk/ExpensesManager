@@ -9,6 +9,7 @@ What things you need to install in advance:
 •	Java 8
 
 •	Maven
+
 Run the application locally
 
 1.	Clone this repository 
