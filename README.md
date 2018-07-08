@@ -6,9 +6,9 @@ Prerequisites
 
 What things you need to install in advance:
 
-•	Java 8
+      •	Java 8
 
-•	Maven
+      •	Maven
 
 Run the application locally
 
@@ -16,14 +16,14 @@ Run the application locally
 
 2.	Run the following:
 
-•	 mvn compile
+       •	mvn compile
 
-•	mvn exec:java -Dexec.mainClass=”ua.karatnyk.App”
+       •	mvn exec:java -Dexec.mainClass=”ua.karatnyk.App”
 
 Run JUnit tests
 
 1.	Run the following:
 
-•	mvn clean test
+       •	mvn clean test
 
 
