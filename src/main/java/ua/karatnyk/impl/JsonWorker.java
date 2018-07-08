@@ -20,7 +20,7 @@ public class JsonWorker implements IJsonWorker{
 	private static final String API_GET_RATES = "latest";
 	
 	//connect to fixer and receive response
-	@Override
+
 	public JSONObject readJSONObject() {
 		
 		URL fixer;
@@ -59,7 +59,7 @@ public class JsonWorker implements IJsonWorker{
 	}
 	
 	//parse json to java object
-	@Override
+	
 	public CurrencyConversion parser() {
 		try {
 			String json = readJSONObject().toString();

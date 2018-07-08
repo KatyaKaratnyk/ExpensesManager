@@ -10,7 +10,7 @@ import ua.karatnyk.IExpensesProgramAPI;
 
 public class ExpensesProgramAPI implements IExpensesProgramAPI{
 	
-	@Override
+	
 	public String readLine() {
 		String result = "";
 		InputStreamReader isr = new InputStreamReader(System.in);
@@ -23,7 +23,7 @@ public class ExpensesProgramAPI implements IExpensesProgramAPI{
 		return result;
 	}
 	//validate date format	
-	@Override
+
 	public boolean checkDate(String string) {
 		try {
 			SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -36,7 +36,7 @@ public class ExpensesProgramAPI implements IExpensesProgramAPI{
 		}
 	}
 	//divide line to specified amount of parts and return specified part of line
-	@Override
+	
 	public String selectWord(String line, int part, int number) {
 		if(number > part || number <=0 || part <= 0)
 			return null;
@@ -46,7 +46,7 @@ public class ExpensesProgramAPI implements IExpensesProgramAPI{
 		return null;
 	}
 	
-	@Override
+	
 	public boolean checkPossibilityDivide(String line, int number) {
 		if(number <= 0)
 			return false;
@@ -55,7 +55,7 @@ public class ExpensesProgramAPI implements IExpensesProgramAPI{
 			return true;
 		return false;
 	}
-	@Override
+	
 	public boolean checkPrice(String string) {
 		try {
 			Double price = Double.parseDouble(string);
@@ -66,7 +66,7 @@ public class ExpensesProgramAPI implements IExpensesProgramAPI{
 			return false;
 		}
 	}
-	@Override
+	
 	public boolean checkCurrency(String string, CurrencyConversion response) {
 		if(response.getRates().containsKey(string.toUpperCase()))
 			return true;
@@ -102,7 +102,7 @@ public class ExpensesProgramAPI implements IExpensesProgramAPI{
 		System.out.println("Currency has incorrect format.");
 		System.out.println("Try again");
 	}
-	@Override
+	
 	public Date stringToDate(String string) {
 		try {
 			return new SimpleDateFormat("yyyy-MM-dd").parse(string);
