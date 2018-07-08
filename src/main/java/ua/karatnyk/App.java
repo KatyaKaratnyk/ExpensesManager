@@ -8,5 +8,6 @@ public class App
     {
         ExpensesProgram program = new ExpensesProgram();
         program.start();
+        
     }
 }
