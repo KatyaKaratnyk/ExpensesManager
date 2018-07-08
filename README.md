@@ -22,7 +22,7 @@ Run the application locally
 
 Run JUnit tests
 
-1.	Run the following:
+Run the following:
 
        •	mvn clean test
 
