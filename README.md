@@ -16,9 +16,9 @@ Run the application locally
 
 2.	Run the following:
 
-       •	mvn compile
+         •	mvn compile
 
-       •	mvn exec:java -Dexec.mainClass=”ua.karatnyk.App”
+         •	mvn exec:java -Dexec.mainClass=”ua.karatnyk.App”
 
 Run JUnit tests
 
